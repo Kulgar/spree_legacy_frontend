@@ -9,7 +9,7 @@ Spree.ready(function($) {
       this.mobileNavigationList = document.querySelector('.mobile-navigation-list');
       this.categoryLinks = document.querySelectorAll('.mobile-navigation-category-link');
       this.backButton = document.querySelector('#mobile-navigation-back-button');
-      this.overlay = document.querySelector('#overlay');
+      //this.overlay = document.querySelector('#overlay');
       this.navigationOpen = false;
       this.openedCategories = ['main'];
 
@@ -65,14 +65,14 @@ Spree.ready(function($) {
     this.navigationOpen = true;
     this.mobileNavigation.classList.add('shown');
     document.body.style.overflow = "hidden";
-    this.overlay.classList.add('shown');
+    //this.overlay.classList.add('shown');
   }
 
   MobileNavigationManager.prototype.close = function() {
     this.navigationOpen = false;
     this.mobileNavigation.classList.remove('shown');
     document.body.style.overflow = "";
-    this.overlay.classList.remove('shown');
+    //this.overlay.classList.remove('shown');
   }
 
   MobileNavigationManager.prototype.openCategory = function(category) {
