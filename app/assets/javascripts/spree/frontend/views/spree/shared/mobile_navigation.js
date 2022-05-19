@@ -64,14 +64,14 @@ Spree.ready(function($) {
   MobileNavigationManager.prototype.open = function() {
     this.navigationOpen = true;
     this.mobileNavigation.classList.add('shown');
-    document.body.style.overflow = "hidden";
+    //document.body.style.overflow = "hidden";
     //this.overlay.classList.add('shown');
   }
 
   MobileNavigationManager.prototype.close = function() {
     this.navigationOpen = false;
     this.mobileNavigation.classList.remove('shown');
-    document.body.style.overflow = "";
+    //document.body.style.overflow = "";
     //this.overlay.classList.remove('shown');
   }
 
